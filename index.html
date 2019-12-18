@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Proza+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title> JS_Danielle Manguele</title>
+</head>
+
+<body id="home">
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" id="navigation" role="navigation">
+            <a class="navbar-brand" href="index.html"><img src="images/MYLOGO1.svg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon" id="myicon"><i class="fas fa-bars" style="color:rgb(212,175,55);font-size:1.5em;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+
+                </ul>
+            </div>
+
+        </nav>
+
+    </header>
+    <div class="padding-page-top landing1">
+        <div class="container" id="landing">
+            <div class="row">
+                <div class="col-12 section-title-wrap text-center" style="top:0px;opacity: 1;">
+                    <h1 id="firsth1">KATHLEEN MANGUELE</h1>
+                    <hr class="mx-auto" id="h1">
+                    <p>Front-End Web Developer</p>
+
+                </div>
+            </div>
+            <div class="rounded-circle"><i class="fas fa-angle-down" aria-hidden="true"></i></div>
+        </div>
+    </div>
+    <h1 id="about">ABOUT</h1>
+    <hr id="a">
+    <div class="container about">
+        <div class="row">
+            <div class="section padding-bottom">
+
+                <div class="col-md-8">
+
+                    <p id="me"> Since my childhood, I have always created designs and worked with computers.<br> When I
+                        graduated from high school, I wanted to follow that path.
+                        Then I enrolled at the university in my home country (Cameroon) where I went for a computer
+                        science program and obtained a bachelor’s degree.<button type="button"
+                            class="btn btn-outline-primary" id="btn">Read more</button><br>
+                        <p id="me1">However, I felt I needed more of a design perspective to succeed so I went for a
+                            degree in web
+                            design and here I am. <br><br>
+                            My best attributes as a front-end web developper are creativity, originality and
+                            organization.</p>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <h1 id="portfolio">PORTFOLIO</h1>
+    <hr id="p">
+    <div class="col-12" id="gallery">
+        <div class="row">
+            <div class="container col-md-4  image img1">
+                <img src="images/mockup.png" class="img-fluid" alt="image1">
+            </div>
+            <div class="container col-md-4 image img2">
+                <img src="images/Screen Shot 2019-05-03 at 10.51.56 AM.png" class="img-fluid" alt="image1">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="container col-md-4 image img3">
+                <img src="images/personnalityportraitfinal.png" class="img-fluid" alt="image1">
+
+            </div>
+            <div class="container col-md-4 image img4">
+                <img src="images/travelposterfinal.png" alt="image1">
+            </div>
+        </div>
+    </div>
+
+
+    <h1 id="contact">CONTACT</h1>
+    <hr id="c">
+    <form id="c1">
+
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder=" First Name..">
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Last Name..">
+        </div>
+        <div class="form-group ">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+            <label for="Message">Message</label>
+            <textarea class="form-control" id="Message" rows="6"></textarea>
+        </div>
+        <button type="button" class="btn button" data-toggle="modal" data-target="#mymodal">Submit</button>
+    </form>
+
+    <div class="footer">
+        <footer class="text-center justify-content-center">
+            <p>&copy; 2019 Danielle Manguele</p>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com"> <i class="fab fa-linkedin-in"></i></a>
+        </footer>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id="mymodal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Message Sent!!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <span><i class="far fa-check-circle"></i></span>
+                  <p>Thank you for contacting me.</p>
+                </div>
+                <div class="modal-footer">
+                  
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+        integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
+        integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+        integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
